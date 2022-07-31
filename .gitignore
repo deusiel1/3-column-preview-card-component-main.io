@@ -1,0 +1,15 @@
+*.json
+
+*.lock
+
+*.nix
+
+*.replit
+
+vite.config.js
+
+node_modules/
+
+.config/
+
+3-column-preview-card-component-main/
