@@ -11,3 +11,9 @@
 	--transp-paragraphs: hsl(179, 100%, 13%);
 	--very-light-gray: hsl(0, 0%, 95%);
 }
+
+.main-card {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+/* 	grid-template-rows: 1fr; */
+}
