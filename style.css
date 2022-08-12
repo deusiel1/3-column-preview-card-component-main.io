@@ -15,9 +15,17 @@
 .main-card {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	padding: 50vh 30vw;
 }
 
-.main-card__item {
-	display: flex;
-	flex-direction: column;
+.main-card__item--sedans {
+	background-color: var(--bright-orange);
+}
+
+.main-card__item--suv {
+	background-color: var(--dark-cyan);
+}
+
+.main-card__item--luxury {
+	background-color: var(--very-dark-cyan);
 }
