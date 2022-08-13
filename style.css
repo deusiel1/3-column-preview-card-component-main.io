@@ -13,7 +13,7 @@
 }
 
 .main-card {
-	display: grid;
+		display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 50vh 30vw;
 }
@@ -33,4 +33,8 @@
 .main-card__button {
 /* 	Tried to use relative units like rem, em or %. Didn't work */
 	border-radius: 15px;
+}
+
+h2, p, img {
+	margin-bottom: 1rem;
 }
