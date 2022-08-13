@@ -29,3 +29,8 @@
 .main-card__item--luxury {
 	background-color: var(--very-dark-cyan);
 }
+
+.main-card__button {
+/* 	Tried to use relative units like rem, em or %. Didn't work */
+	border-radius: 15px;
+}
