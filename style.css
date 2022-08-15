@@ -18,15 +18,20 @@
 	padding: 50vh 30vw;
 }
 
-.main-card__item--sedans {
+.main-card__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.sedans {
 	background-color: var(--bright-orange);
 }
 
-.main-card__item--suv {
+.suv {
 	background-color: var(--dark-cyan);
 }
 
-.main-card__item--luxury {
+.luxury {
 	background-color: var(--very-dark-cyan);
 }
 
