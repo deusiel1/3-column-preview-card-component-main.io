@@ -4,6 +4,18 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: "Lexend-Deca";
+	src: url(https://fonts.google.com/specimen/Lexend+Deca) format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Big-Shoulders";
+	src: url(https://fonts.google.com/specimen/Big+Shoulders+Display) format('truetype');
+	font-weight: 700;
+}
+
 :root {
 	--bright-orange: hsl(31, 77%, 52%);
 	--dark-cyan: hsl(184, 100%, 22%);
@@ -13,15 +25,26 @@
 }
 
 .main-card {
-		display: grid;
+	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 50vh 30vw;
+}
+
+/* Problem here... */
+.main-card__icon {
+	width: 3rem;
+	height: 2rem;
+}
+
+.main-card--title{
+	font-family: "Big-Shoulders";
 }
 
 .main-card__item {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: stretch;
+	padding: 1rem;
 }
 .sedans {
 	background-color: var(--bright-orange);
@@ -35,11 +58,38 @@
 	background-color: var(--very-dark-cyan);
 }
 
+.btn-sedan {
+	color: var(--bright-orange);
+}
+
+.btn-suv {
+	color: var(--dark-cyan);
+}
+
+.btn-luxury {
+	color: var(--very-dark-cyan);
+}
+
 .main-card__button {
 /* 	Tried to use relative units like rem, em or %. Didn't work */
-	border-radius: 15px;
+	border-radius: 20px;
+	padding: 10%;
+	background-color: var(--very-light-gray);
+	border-style: none;
+}
+
+.main-card__button:hover {
+	background-color: rgba(255,255,255, 0.1);
+	border-style: solid;
+	border-color: hsla(0, 0%, 100%, 0.75);
+	color: hsla(0, 0%, 100%, 0.75);
+/* 	Just in  case, on replit hover seems to change the box size */
+	box-sizing: content-box;
 }
 
 h2, p, img {
 	margin-bottom: 1rem;
 }
+
+@media (min-width:1440px;)
+
