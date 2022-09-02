@@ -1,19 +1,8 @@
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-@font-face {
-	font-family: "Lexend-Deca";
-	src: url(https://fonts.google.com/specimen/Lexend+Deca) format('truetype');
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: "Big-Shoulders";
-	src: url(https://fonts.google.com/specimen/Big+Shoulders+Display) format('truetype');
-	font-weight: 700;
 }
 
 :root {
@@ -24,20 +13,89 @@
 	--very-light-gray: hsl(0, 0%, 95%);
 }
 
-.main-card {
+@media (min-width:375px) {
+	.main-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
+		.main-card__icon {
+	width: 3rem;
+	height: 2rem;
+	}
+
+.main-card__title {
+	font-family: "Big Shoulders Display";
+	font-weight: 700;
+	color: var(--very-light-gray);
+	}
+
+.main-card__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem;
+	}
+
+.main-card__text {
+	font-family: "Lexend Deca";
+	font-weight: 400;
+}
+.sedans {
+	background-color: var(--bright-orange);
+}
+
+.suv {
+	background-color: var(--dark-cyan);
+	}
+
+.luxury {
+	background-color: var(--very-dark-cyan);
+	}
+
+.btn-sedan {
+	color: var(--bright-orange);
+	}
+
+.btn-suv {
+	color: var(--dark-cyan);
+	}
+
+.btn-luxury {
+	color: var(--very-dark-cyan);
+	}
+
+.main-card__button {
+/* 	Tried to use relative units on radius like rem, em or %. Didn't work */
+	border-radius: 20px;
+	padding: 3% 5%;
+	background-color: var(--very-light-gray);
+	border-style: none;
+	width: 50%;
+	}
+}
+
+/* Desktop Version */
+@media (min-width: 1440px){
+	.main-card {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 50vh 30vw;
 }
 
-/* Problem here... */
+
 .main-card__icon {
 	width: 3rem;
 	height: 2rem;
 }
 
-.main-card--title{
-	font-family: "Big-Shoulders";
+.main-card__title {
+	font-family: "Big Shoulders Display";
+	font-weight: 700;
+	color: var(--very-light-gray);
 }
 
 .main-card__item {
@@ -45,6 +103,11 @@
 	flex-direction: column;
 	justify-content: stretch;
 	padding: 1rem;
+}
+
+.main-card__text {
+	font-family: "Lexend Deca";
+	font-weight: 400;
 }
 .sedans {
 	background-color: var(--bright-orange);
@@ -73,7 +136,8 @@
 .main-card__button {
 /* 	Tried to use relative units like rem, em or %. Didn't work */
 	border-radius: 20px;
-	padding: 10%;
+	width: 80%;
+	padding: 5%;
 	background-color: var(--very-light-gray);
 	border-style: none;
 }
@@ -89,7 +153,8 @@
 
 h2, p, img {
 	margin-bottom: 1rem;
+	}
+
 }
 
-@media (min-width:1440px;)
 
