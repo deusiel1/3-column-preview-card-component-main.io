@@ -15,10 +15,8 @@
 
 @media (min-width:375px) {
 	.main-card {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items:center;
+		display: block;
+		margin: auto 25vh;
 		padding-top: 10vh;
 		padding-bottom: 10vh;
 	}
@@ -83,6 +81,8 @@
 	.main-card {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+
+
 	padding: 50vh 30vw;
 }
 
@@ -103,6 +103,7 @@
 	flex-direction: column;
 	justify-content: stretch;
 	padding: 1rem;
+	min-width: 453px;
 }
 
 .main-card__text {
