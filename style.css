@@ -13,6 +13,17 @@
 	--very-light-gray: hsl(0, 0%, 95%);
 }
 
+/*Front-End Mentor Stuff*/
+.attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+
 /* re-check it */
 body {
     height: 100vh;
