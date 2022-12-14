@@ -13,6 +13,11 @@
 	--very-light-gray: hsl(0, 0%, 95%);
 }
 
+/* re-check it */
+body {
+    height: 100vh;
+}
+
 @media (min-width:375px) {
 	.main-card {
 		display: block;
@@ -24,7 +29,7 @@
 	width: 3rem;
 	height: 2rem;
 	}
-
+  
 .main-card__title {
 	font-family: "Big Shoulders Display";
 	font-weight: 700;
@@ -41,6 +46,7 @@
 .main-card__text {
 	font-family: "Lexend Deca";
 	font-weight: 400;
+    margin-bottom: 1rem;
 }
 .sedans {
 	background-color: var(--bright-orange);
@@ -73,17 +79,18 @@
 	background-color: var(--very-light-gray);
 	border-style: none;
 	width: 50%;
+    max-width: 10rem;
 	}
 }
 
-/* Desktop Version */
-@media (min-width: 1440px){
+/* ---------------------------- Desktop Version ------------------------- */
+@media (min-width: 900px){ /*Mudar para 1440*/
 	.main-card {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-
-
-	padding: 50vh 30vw;
+	display: flex;
+    padding: 10%; /*Why it centers the boxes on the page?*/
+    justify-content: center;
+    margin: 0 auto;
+/* 	padding: 50vh 50vw; */
 }
 
 
@@ -101,8 +108,8 @@
 .main-card__item {
 	display: flex;
 	flex-direction: column;
-	justify-content: stretch;
-	padding: 1rem;
+	justify-content: center;
+	padding: 2rem;
 	min-width: 453px;
 }
 
@@ -141,6 +148,9 @@
 	padding: 5%;
 	background-color: var(--very-light-gray);
 	border-style: none;
+
+}
+
 }
 
 .main-card__button:hover {
@@ -149,13 +159,12 @@
 	border-color: hsla(0, 0%, 100%, 0.75);
 	color: hsla(0, 0%, 100%, 0.75);
 /* 	Just in  case, on replit hover seems to change the box size */
-	box-sizing: content-box;
+/* 	box-sizing: content-box; */
 }
 
 h2, p, img {
 	margin-bottom: 1rem;
 	}
 
-}
 
 
